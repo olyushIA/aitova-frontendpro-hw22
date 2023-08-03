@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+    
+    function createSumFunction() {
+    let sum = 0;
+
+    // Повертаємо функцію, яка буде приймати параметр і додавати його до поточної суми
+    return function (num) {
+        sum += num;
+        return sum;
+    };
+    }
+
+    const sum = createSumFunction();
+
+    console.log(sum(3));
+    console.log(sum(5));
+    console.log(sum(20)); 
+
+    </script>
+</body>
+</html>
